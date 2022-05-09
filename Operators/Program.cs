@@ -37,7 +37,7 @@ namespace Operators
             //y = z - x;
             //Console.WriteLine($"x++ - ++x gives: x is {x} and y is {y}");
             //// x++ - ++x gives: x is 5 and y is -2
-            ///
+            //----------------- Using Modulo or Remainder Operator---------
             //int x = 12; 
             //int y = 4;
             //if (x % y == 0)
@@ -48,11 +48,18 @@ namespace Operators
             //{
             //    Console.WriteLine($"{y} does not divide exactly into {x}");
             //}
-            for (int month = 1; month <= 12; month++)
+            //for (int month = 1; month <= 12; month++)
+            //{
+            //    Console.WriteLine($"The next month after {month} is {month % 12 + 1}");
+            //}
+            //----------120 Realtional & Conditional Operators-----------
+            int second = 31;
+            int minute = 1;
+
+            if ((minute < 59) && ((second + 1) > 59))
             {
-                Console.WriteLine($"The next month after {month} is {month % 12 + 1}");
+                minute++;
             }
-            
         }
     }
 }
