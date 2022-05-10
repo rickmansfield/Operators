@@ -53,13 +53,37 @@ namespace Operators
             //    Console.WriteLine($"The next month after {month} is {month % 12 + 1}");
             //}
             //----------120 Realtional & Conditional Operators-----------
-            int second = 31;
-            int minute = 1;
+            //int second = 31;
+            //int minute = 1;
 
-            if ((minute < 59) && ((second + 1) > 59))
+            //if ((minute < 59) && ((second + 1) > 59))
+            //{
+            //    minute++;
+            //}
+            //----------121 Short Circut Eval-----------------
+            // the code below is not desiged to evaluate correctly. It's only designed to demonstate "short circuting"
+            int a = 12;
+            int b = 6;
+            //if (b != 0)
+            //{
+
+            //    int c = DivideTwoNumbers(a, b);
+            //    if (c == 2)
+            //    {
+            //        Console.WriteLine("We've found a 2");
+            //    }
+            //}
+            if (b != 0 && DivideTwoNumbers(a, b) == 2)// This proves that the second code after && is not evealuated or short circuted.  
             {
-                minute++;
+                Console.WriteLine("We've found a 2");
+            }
+            if (b == 0 || DivideTwoNumbers(a, b) == 2)// This proves that the second code after "||" is not evealuated or "short circuted. 
+            {
+                Console.WriteLine("We've found a 2");
             }
         }
+        static int DivideTwoNumbers(int x, int y)
+        { return x / y; }
+
     }
 }
