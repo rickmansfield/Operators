@@ -62,28 +62,49 @@ namespace Operators
             //}
             //----------121 Short Circut Eval-----------------
             // the code below is not desiged to evaluate correctly. It's only designed to demonstate "short circuting"
-            int a = 12;
-            int b = 6;
-            //if (b != 0)
-            //{
+            //    int a = 12;
+            //    int b = 6;
+            //    //if (b != 0)
+            //    //{
 
-            //    int c = DivideTwoNumbers(a, b);
-            //    if (c == 2)
+            //    //    int c = DivideTwoNumbers(a, b);
+            //    //    if (c == 2)
+            //    //    {
+            //    //        Console.WriteLine("We've found a 2");
+            //    //    }
+            //    //}
+            //    if (b != 0 && DivideTwoNumbers(a, b) == 2)// This proves that the second code after && is not evealuated or short circuted.  
+            //    {
+            //        Console.WriteLine("We've found a 2");
+            //    }
+            //    if (b == 0 || DivideTwoNumbers(a, b) == 2)// This proves that the second code after "||" is not evealuated or "short circuted. 
             //    {
             //        Console.WriteLine("We've found a 2");
             //    }
             //}
-            if (b != 0 && DivideTwoNumbers(a, b) == 2)// This proves that the second code after && is not evealuated or short circuted.  
-            {
-                Console.WriteLine("We've found a 2");
-            }
-            if (b == 0 || DivideTwoNumbers(a, b) == 2)// This proves that the second code after "||" is not evealuated or "short circuted. 
-            {
-                Console.WriteLine("We've found a 2");
-            }
-        }
-        static int DivideTwoNumbers(int x, int y)
-        { return x / y; }
+            //static int DivideTwoNumbers(int x, int y)
+            //{ return x / y; }
+            //int x = 12;
+            //x *= 34;
+            //Console.WriteLine(x);
 
+            //int y = 12;
+            //y = y * 34;
+            //Console.WriteLine(y);
+            //int z = y -= 8;
+            //Console.WriteLine($"y is {y} z is {z}");
+
+            //int b = 1 + 3 * 15 / 2;
+            //Console.WriteLine($"b is {b}");
+
+            //double k = 1 + 3 * 15 / 2;
+            //double j = 1 + 3 * 15 / 2.0;
+            //Console.WriteLine($"{k}, {j}");
+
+            bool x = false;
+            bool y = true;
+            bool z = true;
+            Console.WriteLine(x && y || z);
+        }
     }
 }
