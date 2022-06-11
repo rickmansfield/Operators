@@ -82,29 +82,36 @@ namespace Operators
             //        Console.WriteLine("We've found a 2");
             //    }
             //}
-            //static int DivideTwoNumbers(int x, int y)
+            //static int dividetwonumbers(int x, int y)
             //{ return x / y; }
-            //int x = 12;
-            //x *= 34;
-            //Console.WriteLine(x);
 
-            //int y = 12;
-            //y = y * 34;
-            //Console.WriteLine(y);
-            //int z = y -= 8;
-            //Console.WriteLine($"y is {y} z is {z}");
+            //----------122 Assignmnet Opertators-----------------
+            int x = 12;
+            x += 34;
+            Console.WriteLine(x);
 
-            //int b = 1 + 3 * 15 / 2;
-            //Console.WriteLine($"b is {b}");
+            int t = 12;
+            t *= 34;
+            Console.WriteLine(t);
 
-            //double k = 1 + 3 * 15 / 2;
-            //double j = 1 + 3 * 15 / 2.0;
-            //Console.WriteLine($"{k}, {j}");
+            int y = 12;
+            y = y * 34;
+            Console.WriteLine(y);
 
-            bool x = false;
-            bool y = true;
-            bool z = true;
-            Console.WriteLine(x && y || z);
+            int z = y -= 8;
+            Console.WriteLine($"y is {y} z is {z}");
+
+            int b = 1 + 3 * 15 / 2;
+            Console.WriteLine($"b is {b}");
+
+            double k = 1 + 3 * 15 / 2;
+            double j = 1 + 3 * 15 / 2.0;
+            Console.WriteLine($"{k}, {j}");
+
+            //bool x = false;
+            //bool y = true;
+            //bool z = true;
+            //Console.WriteLine(x && y || z);
         }
     }
 }
